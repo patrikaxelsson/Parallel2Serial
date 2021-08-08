@@ -23,7 +23,7 @@ firmware:
 | 8       | D6       | D6      | PD6 |                                                          | 
 | 9       | D7       | D7      | PD7 |                                                          | 
 | 10      | /ACK     | D8      | PB0 | Low indicates data has been read by the AVR.             |
-| 11      | BUSY     | D4      | PD4 | High indicates AVR is not ready to read data.            |
+| 11      | BUSY     | D4      | PD4 | High indicates AVR is not ready to read more data.       |
 | 12      | POUT     | D5      | PD5 | Not used.                                                |
 | 13      | SEL      | D3      | PB1 | High indicates to the Amiga that something is connected. |
 | 17-22   | GND      | GND     | GND |                                                          |
