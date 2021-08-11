@@ -1,14 +1,22 @@
-# Parallel2Serial
+Short: Make the parallel port a serial port
+Author: Patrik Axelsson
+Uploader: patrik.bo@gmail.com
+Type: docs/hard
+Architecture: generic
+Requires: Amiga with parallel port
+Version: 1.0
+URL: https://github.com/patrikaxelsson/Parallel2Serial
 
 Converts a centronics style parallel port to a serial port, output only.
 Created for getting an alternative debug output on an Amiga, when the serial
 port is occupied, but should work in with any computer with a centronics
 style parallel port.
 
-## Hardware
+
+Hardware:
 
 Was built with an Arduino Pro Mini clone, but the Arduino Nano should also
-work. Uses the same connection scheme/pinout as a [plipbox](https://github.com/cnvogelg/plipbox/blob/master/doc/src/hardware.md) based on an Arduino
+work. Uses the same connection scheme/pinout as a plipbox based on an Arduino
 Mini or Nano, so a plipbox can be flashed with this firmware and used
 directly:
 
@@ -36,7 +44,8 @@ directly:
 Depending on what you want to connect it to at the serial end, use a RS232
 serial transceiver or a USB to TTL-level serial converter.
 
-## Software
+
+Software:
 
 The serial port is set to 57600bps by the firmware, not configurable
 currently. To change the speed a recompile is needed. Reasons for 57600 is
@@ -47,7 +56,7 @@ project currently is intended for - debug output.
 Use the included firmware hex file to flash the AVR.
 
 
-## Usage/testing
+Usage/testing:
 
 The main objective was to get it to work with the parallel port output
 functions in ddebug.lib included in the Amiga NDK, but it will work with
@@ -55,7 +64,5 @@ anything that outputs data on the parallel port.
 
 For example, an Amiga, you can easily test it by executing something like
 this in a shell/CLI:
-```
 echo "test" >PAR:
-```
 
