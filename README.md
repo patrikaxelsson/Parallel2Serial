@@ -14,8 +14,7 @@ directly:
 
 | Par num | Par name | Arduino | AVR | Description                          |
 | ------- | -------- | ------- | --- | ------------------------------------ |
-| 1       | /STROBE  | D3      | PD3 | Low indicates that data is available |
-|         |          |         |     | from the Amiga.                      |
+| 1       | /STROBE  | D3      | PD3 | Low indicates that data is available from the Amiga. |
 | 2       | D0       | A0      | PC0 |                                      |
 | 3       | D1       | A1      | PC1 |                                      |
 | 4       | D2       | A2      | PC2 |                                      |
@@ -24,13 +23,10 @@ directly:
 | 7       | D5       | A5      | PC5 |                                      |
 | 8       | D6       | D6      | PD6 |                                      |
 | 9       | D7       | D7      | PD7 |                                      |
-| 10      | /ACK     | D8      | PB0 | Low indicates data has been read by  |
-|         |          |         |     | the AVR.                             |
-| 11      | BUSY     | D4      | PD4 | High indicates AVR is not ready to   |
-|         |          |         |     | read more data.                      |
+| 10      | /ACK     | D8      | PB0 | Low indicates data has been read by the AVR. |
+| 11      | BUSY     | D4      | PD4 | High indicates AVR is not ready to read more data. |
 | 12      | POUT     | D5      | PD5 | Not used.                            |
-| 13      | SEL      | D3      | PB1 | High indicates to the Amiga that     |
-|         |          |         |     | something is connected.              |
+| 13      | SEL      | D3      | PB1 | High indicates to the Amiga that something is connected. |
 | 17-22   | GND      | GND     | GND |                                      |
 
 Depending on what you want to connect it to at the serial end, use a RS232
